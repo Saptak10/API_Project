@@ -18,7 +18,7 @@
     padding: 0;
   }
   
-  .input{
+  .input_weather{
     text-align: center;
     padding: 80px auto;
   }
@@ -67,34 +67,7 @@
     margin: 20px auto; 
     color: rgb(14, 14, 14);
   }
- /*
-  .temp {
-    text-align: center;
-    margin:10px 0;
-    font-size:20px;
-  }
-  .desc{
-    text-align: center;
-    margin:10px 0;
-    font-size:20px;
-  }
-  .hp{
-    text-align: center;
-    margin:10px 0;
-    font-size:20px;
-  }
-  .fl{
-    text-align: center;
-    margin:10px 0;
-    font-size:20px;
-  }
-  .rangetemp{
-    text-align: center;
-    margin:10px 0;
-    font-size:20px;
-  }
 
-  */
   .details{
 
 color: rgb(14, 14, 14);
@@ -194,4 +167,179 @@ padding-top: 100px;
   .dollars{
     font-size: 30px;
   }
+}
+
+
+.covid_head {
+text-align: center;
+color:aliceblue;
+padding-top: 100px;
+}
+
+.country_head{
+  
+color:rgb(14, 26, 36);
+padding-top: 20px;
+}
+
+.state_head{
+  
+  color:rgb(14, 26, 36);
+  padding-top: 20px;
+  }
+
+.covid {
+  
+  background-color: rgba(28, 62, 214, 0.705);
+  height: 100%;
+  background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+}
+
+.covid .country-box {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  border-radius: 10px;
+}
+
+.covid .country-box i {
+  font-size: 42px;
+  line-height: 0;
+  margin-right: 20px;
+  color: #4154f1;
+}
+
+.covid .country-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #0b198f;
+}
+
+.covid .country-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+}
+
+.covid .state-box {
+  text-align: center;
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  border-radius: 10px;
+}
+
+.covid .state-box i {
+  font-size: 42px;
+  line-height: 0;
+  margin-right: 20px;
+  color: #4154f1;
+}
+
+.covid .state-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #0b198f;
+}
+
+.covid .state-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+}
+
+.covid .covid-box {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 30px;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
+  border-radius: 10px;
+}
+
+.covid .covid-box i {
+  font-size: 42px;
+  line-height: 0;
+  margin-right: 20px;
+  color: #4154f1;
+}
+
+.covid .covid-box span {
+  font-size: 36px;
+  display: block;
+  font-weight: 600;
+  color: #0b198f;
+}
+
+.covid .covid-box p {
+  padding: 0;
+  margin: 0;
+  font-family: "Nunito", sans-serif;
+  font-size: 14px;
+}
+
+.country{
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  font-weight: 600;
+  color: #ee2208;
+  width:210px;
+  border:none;
+}
+
+.state{
+  text-align: center;
+  font-size: 30px;
+  display: block;
+  font-weight: 600;
+  color: #ee2208;
+  width:200px;
+  border:none;
+}
+
+.country_search{
+text-decoration: none;
+border: none;
+background: none;
+transition: 500ms;
+font-weight: bold;
+}
+
+.country_search:hover{
+color: white;
+background-color: #8d98f8;
+  }
+
+.state_search{
+  text-decoration: none;
+  border: none;
+  background: none;
+  transition: 500ms;
+}
+
+.state_search:hover{
+  color: white;
+  background-color: #8d98f8;
 }
