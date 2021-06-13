@@ -6,10 +6,10 @@ var weathericon = document.querySelector('.weathericon');
 var hp = document.querySelector('.hp');
 var fl = document.querySelector('.fl');
 var rangetemp = document.querySelector('.rangetemp');
-var button= document.querySelector('.submit');
+var weather_submit= document.querySelector('.submit');
 
 
-button.addEventListener('click', function(name){
+weather_submit.addEventListener('click', function(){
 fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=909ab9fe44a1e87a3d566d5abc8ad83d')
 .then(response => response.json())
 .then(data => {
@@ -64,4 +64,76 @@ fetch('https://api.cryptonator.com/api/full/btc-usd')
   euro.innerHTML = "EURO = "+eur+" Euro  \nDecrement = "+ eur_change+" Euro";
   else 
   euro.innerHTML = "EURO = "+eur+" Euro  \nIncrement = "+ eur_change+" Euro";
+})
+
+var countryname = document.querySelector('.country');
+var country_confirm = document.querySelector('.country_confirm');
+var country_recover = document.querySelector('.country_recover');
+var country_death = document.querySelector('.country_death');
+var state = document.querySelector('.state');
+var state_confirm = document.querySelector('.state_confirm');
+var state_recover = document.querySelector('.state_recover');
+var state_death = document.querySelector('.state_death');
+
+  fetch('https://covid-api.mmediagroup.fr/v1/cases')
+    .then(response => response.json())
+    .then(data => {
+  var c_confirm = data.India.All.confirmed;
+  var c_recover = data.India.All.recovered;
+  var c_death = data.India.All.deaths;
+  
+  var s_confirm = data.India["West Bengal"].confirmed;
+  var s_recover = data.India["West Bengal"].recovered;
+  var s_death = data.India["West Bengal"].deaths;
+
+  country_confirm.innerHTML = c_confirm;
+  country_recover.innerHTML = c_recover;
+  country_death.innerHTML = c_death;
+
+  state_confirm.innerHTML = s_confirm;
+  state_recover.innerHTML = s_recover;
+  state_death.innerHTML = s_death;
+
+})
+var country_submit= document.querySelector('.country_search');
+var state_submit= document.querySelector('.state_search');
+
+var c_name = input.value;
+var s_name = input.value;
+
+  country_submit.addEventListener('click', function(){
+    fetch('https://covid-api.mmediagroup.fr/v1/cases')
+    .then(response => response.json())
+    .then(data => {
+
+    var c_confirm = data[c_name].All.confirmed;
+    var c_recover = data[c_name].All.recovered;
+    var c_death = data[c_name].All.deaths;
+
+    country_confirm.innerHTML = c_confirm;
+    country_recover.innerHTML = c_recover;
+    country_death.innerHTML = c_death;
+  })
+  
+
+
+/* state_submit.addEventListener('click', function(){
+  fetch('https://covid-api.mmediagroup.fr/v1/cases')
+  .then(response => response.json())
+  .then(data => {
+
+  var s_confirm = data[s_name].All.confirmed;
+  var s_recover = data[s_name].All.recovered;
+  var s_death = data[s_name].All.deaths;
+
+  state_confirm.innerHTML = s_confirm;
+  state_recover.innerHTML = s_recover;
+  state_death.innerHTML = s_death;
+})
+
+.catch(err => alert("Enter a correct State name!"+err));
+})
+*/
+
+.catch(err => alert("Enter a correct Country name!"+err));
 })
