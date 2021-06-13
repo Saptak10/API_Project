@@ -1,0 +1,197 @@
+.weather{
+    background-image: url("https://images.unsplash.com/photo-1512514076443-1eef59c260b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
+    height: 100vh;
+    background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+}
+.weather_head {
+  text-align: center;
+  color:rgb(37, 62, 175);
+  padding-top: 80px;
+
+} 
+  body{
+    font-family: "Nunito",sans-serif;
+    margin:0;
+    padding: 0;
+  }
+  
+  .input{
+    text-align: center;
+    padding: 80px auto;
+  }
+  
+  .submit{
+    padding: 4px 30px;
+    background-color: rgba(17, 17, 17, 0.658);
+    color:rgb(207, 207, 207);
+    border: none;
+    border-radius: 25px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    height: 56px;
+    margin-top: 2%;
+    transition: 500ms;
+  }
+
+  .submit:hover{
+    background-color: rgb(0, 0, 0);
+  }
+  
+  .input_text{
+    width: 60%;
+    height: 55px;
+    padding: 5px 10px;
+    background-color: rgba(17, 17, 17, 0.658);
+    color:rgb(207, 207, 207);
+    border: none;
+    border-radius: 25px;
+    font-family: "Nunito",sans-serif;
+    font-weight:bold;
+    font-size: 20px;
+    transition: 500ms;
+  }
+
+  .input_text:focus{
+  text-decoration: none;
+  }
+  .input_text:hover{
+    background-color: rgb(0, 0, 0);
+    }
+  
+ #name{
+    text-align: center;
+    margin: 20px auto; 
+    color: rgb(14, 14, 14);
+  }
+ /*
+  .temp {
+    text-align: center;
+    margin:10px 0;
+    font-size:20px;
+  }
+  .desc{
+    text-align: center;
+    margin:10px 0;
+    font-size:20px;
+  }
+  .hp{
+    text-align: center;
+    margin:10px 0;
+    font-size:20px;
+  }
+  .fl{
+    text-align: center;
+    margin:10px 0;
+    font-size:20px;
+  }
+  .rangetemp{
+    text-align: center;
+    margin:10px 0;
+    font-size:20px;
+  }
+
+  */
+  .details{
+
+color: rgb(14, 14, 14);
+width:100%;
+text-align: center;
+font-size:25px;
+  margin-left:0%;
+  margin-top: 5%;
+  border-radius: 15px;
+  }
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {  
+  .details{
+    width:100%;
+    margin-left:0%;
+    margin-top: 30%;
+    font-size:45px;
+    color: rgb(255, 245, 199);
+  }
+  #name{
+    color: rgb(255, 245, 199);
+    font-size: 50px;
+  }
+}
+
+
+@media (max-width: 767px) {
+  .details{
+    width:100%;
+    margin-left:0%;
+    margin-top: 35%;
+    color: rgb(255, 245, 199);
+  }
+  #name{
+    color: rgb(255, 245, 199);
+    font-size: 40px;
+  }
+}
+
+
+.bitcoin{
+  background-image: url("https://images.unsplash.com/photo-1524673450801-b5aa9b621b76?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=750&q=80");
+  height: 100vh;
+  background-position: center center;
+background-size: cover;
+background-repeat: no-repeat;
+width: 100%;
+}
+.bitcoin_head {
+text-align: center;
+padding-top: 2%;
+color:aliceblue;
+padding-top: 100px;
+} 
+
+.bitcoin_head2 {
+  text-align: center;
+  padding-top: 2%;
+  color:aliceblue;
+  padding-bottom: 25px;
+  } 
+
+.dollars{
+  color:rgb(34, 33, 33);
+  font-size: 40px;
+  background-color: rgba(235, 235, 235, 0.658);
+  border-radius: 25px;
+  padding: none 5px;
+  padding-left: 10px;
+}
+.rs{
+  color:rgb(34, 33, 33);
+  font-size: 40px;
+  background-color: rgba(235, 235, 235, 0.658);
+  border-radius: 25px;
+  padding: 5px none;
+  padding-left: 10px;
+
+}
+.euro{
+  background-color: rgba(235, 235, 235, 0.658);
+  border-radius: 25px;
+  padding: none 2px;
+  font-size: 40px;
+  color:rgb(34, 33, 33);
+  padding-left: 10px;
+
+}
+
+@media (max-width: 767px) {
+  .euro{
+    font-size: 30px;
+  }
+  .rs{
+    font-size: 30px;
+  }
+  .dollars{
+    font-size: 30px;
+  }
+}
