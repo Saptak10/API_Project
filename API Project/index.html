@@ -28,6 +28,9 @@
               <li class="nav-item">
                 <a class="nav-link" href="#project2">Bitcoin</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#project3">COVID-19</a>
+              </li>
               
             </ul>
           </div>
@@ -36,13 +39,13 @@
 
       <section class="weather" id="project1">
 <h1 class="weather_head ">Weather Climate</h1>
-        <div class="input">
+        <div class="input_weather">
             <input type="text" placeholder="Enter the city name" class="input_text">
-            <button class="submit"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+            <button class="submit"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
               <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
             </svg></button>
-          </div>
         </div>
+        
       <div class="container align-items-center">
         <div class="details" >
             <b><h1 id="name"></h1></b>
@@ -65,6 +68,111 @@
       <p class="euro"></p>
     </div>
           </section>
+
+        </section>
+
+    <section  id="project3" class="covid">
+          <h1 class="covid_head">COVID-19 Status</h1>
+          
+
+          <div class="container" data-aos="fade-up">
+            <h2 class="country_head">Country</h2>
+            <div class="row gy-4">
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="country-box">
+                  <div>
+                    <input type="text" placeholder="Country Name" class="country" value="India"></input>
+                    <button class="country_search rounded-pill"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg></button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="covid-box">
+                  <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+                  <div>
+                    <span class="country_confirm">None</span>
+                    <p>Confirmed</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="covid-box">
+                  <i class="bi bi-headset" style="color: #15be56;"></i>
+                  <div>
+                    <span class="country_recover">None</span>
+                    <p>Recovered</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="covid-box">
+                  <i class="bi bi-people" style="color: #bb0852;"></i>
+                  <div>
+                    <span class="country_death">None</span>
+                    <p>Death</p>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+
+          <div class="container" data-aos="fade-up">
+            <h2 class="state_head">State</h2>
+            <div class="row gy-4">
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="state-box">
+                  <div>
+                    <input type="text" placeholder="State Name" class="state" value="West Bengal"></input>
+                    <button class="state_search rounded-pill"><svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                      <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+                    </svg></button>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="covid-box">
+                  <i class="bi bi-journal-richtext" style="color: #ee6c20;"></i>
+                  <div>
+                    <span class="state_confirm">None</span>
+                    <p>Confirmed</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="covid-box">
+                  <i class="bi bi-headset" style="color: #15be56;"></i>
+                  <div>
+                    <span class="state_recover">None</span>
+                    <p>Recovered</p>
+                  </div>
+                </div>
+              </div>
+    
+              <div class="col-lg-3 col-md-6">
+                <div class="covid-box">
+                  <i class="bi bi-people" style="color: #bb0852;"></i>
+                  <div>
+                    <span class="state_death">None</span>
+                    <p>Death</p>
+                  </div>
+                </div>
+              </div>
+    
+            </div>
+    
+          </div>
+              </section>
       <script src='index.js'></script>
 </body>
 </html>
