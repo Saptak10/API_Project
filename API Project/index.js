@@ -70,7 +70,7 @@ var countryname = document.querySelector('.country');
 var country_confirm = document.querySelector('.country_confirm');
 var country_recover = document.querySelector('.country_recover');
 var country_death = document.querySelector('.country_death');
-var state = document.querySelector('.state');
+var statename = document.querySelector('.state');
 var state_confirm = document.querySelector('.state_confirm');
 var state_recover = document.querySelector('.state_recover');
 var state_death = document.querySelector('.state_death');
@@ -95,45 +95,46 @@ var state_death = document.querySelector('.state_death');
   state_death.innerHTML = s_death;
 
 })
-var country_submit= document.querySelector('.country_search');
+/*  var country_submit= document.querySelector('.country_search');
 var state_submit= document.querySelector('.state_search');
 
-var c_name = input.value;
-var s_name = input.value;
+var c_name = countryname.value;
+var s_name = statename.value;
 
   country_submit.addEventListener('click', function(){
     fetch('https://covid-api.mmediagroup.fr/v1/cases')
     .then(response => response.json())
-    .then(data => {
+    .then(c_data => {
 
-    var c_confirm = data[c_name].All.confirmed;
-    var c_recover = data[c_name].All.recovered;
-    var c_death = data[c_name].All.deaths;
+    var c_confirm_2 = c_data.c_name.All.confirmed;
+    var c_recover_2 = c_data.c_name.All.recovered;
+    var c_death_2 = data.c_name.All.deaths;
 
-    country_confirm.innerHTML = c_confirm;
-    country_recover.innerHTML = c_recover;
-    country_death.innerHTML = c_death;
+    country_confirm.innerHTML = c_confirm_2;
+    country_recover.innerHTML = c_recover_2;
+    country_death.innerHTML = c_death_2;
   })
   
 
 
-/* state_submit.addEventListener('click', function(){
+ state_submit.addEventListener('click', function(){
   fetch('https://covid-api.mmediagroup.fr/v1/cases')
   .then(response => response.json())
   .then(data => {
 
-  var s_confirm = data[s_name].All.confirmed;
-  var s_recover = data[s_name].All.recovered;
-  var s_death = data[s_name].All.deaths;
+  var s_confirm_2 = data.s_name.All.confirmed;
+  var s_recover_2 = data.s_name.All.recovered;
+  var s_death_2 = data.s_name.All.deaths;
 
-  state_confirm.innerHTML = s_confirm;
-  state_recover.innerHTML = s_recover;
-  state_death.innerHTML = s_death;
+  state_confirm.innerHTML = s_confirm_2;
+  state_recover.innerHTML = s_recover_2;
+  state_death.innerHTML = s_death_2;
 })
 
 .catch(err => alert("Enter a correct State name!"+err));
 })
-*/
+
 
 .catch(err => alert("Enter a correct Country name!"+err));
 })
+*/
