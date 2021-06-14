@@ -1,3 +1,13 @@
+.navbar-toggler .toggler-icon {
+width: 30px;
+  height: 2px;
+  background-color: #fff;
+  display: block;
+  margin: 5px 0;
+  position: relative;
+  transition: all 0.3s ease-out 0s;
+}
+
 .weather{
     background-image: url("https://images.unsplash.com/photo-1512514076443-1eef59c260b0?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=675&q=80");
     height: 100vh;
@@ -343,3 +353,4 @@ background-color: #8d98f8;
   color: white;
   background-color: #8d98f8;
 }
+
