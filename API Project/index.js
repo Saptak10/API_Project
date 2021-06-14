@@ -37,6 +37,8 @@ fetch('https://api.openweathermap.org/data/2.5/weather?q='+input.value+'&appid=9
 .catch(err => alert("Enter a correct city name!"));
 })
 
+// bitcoin
+
 var rs = document.querySelector('.rs');
 var dollars = document.querySelector('.dollars');
 var euro = document.querySelector('.euro');
@@ -65,6 +67,8 @@ fetch('https://api.cryptonator.com/api/full/btc-usd')
   else 
   euro.innerHTML = "EURO = "+eur+" Euro  \nIncrement = "+ eur_change+" Euro";
 })
+
+// covid19
 
 var countryname = document.querySelector('.country');
 var country_confirm = document.querySelector('.country_confirm');
@@ -95,24 +99,33 @@ var state_death = document.querySelector('.state_death');
   state_death.innerHTML = s_death;
 
 })
-/*  var country_submit= document.querySelector('.country_search');
+
+
+/*
+ var country_submit= document.querySelector('.country_search');
 var state_submit= document.querySelector('.state_search');
 
+
+country_submit.addEventListener('click', function(){
 var c_name = countryname.value;
 var s_name = statename.value;
+console.log(c_name);
+})
 
+
+/*
   country_submit.addEventListener('click', function(){
     fetch('https://covid-api.mmediagroup.fr/v1/cases')
     .then(response => response.json())
-    .then(c_data => {
+    .then(data => {
 
-    var c_confirm_2 = c_data.c_name.All.confirmed;
-    var c_recover_2 = c_data.c_name.All.recovered;
-    var c_death_2 = data.c_name.All.deaths;
-
-    country_confirm.innerHTML = c_confirm_2;
-    country_recover.innerHTML = c_recover_2;
-    country_death.innerHTML = c_death_2;
+    var c_confirm = data.c_name.All.confirmed;
+    var c_recover = data.c_name.All.recovered;
+    var c_death = data.c_name.All.deaths;
+    
+    country_confirm.innerHTML = c_confirm;
+    country_recover.innerHTML = c_recover;
+    country_death.innerHTML = c_death;
   })
   
 
@@ -135,6 +148,6 @@ var s_name = statename.value;
 })
 
 
-.catch(err => alert("Enter a correct Country name!"+err));
+// .catch(err => alert("Enter a correct Country name!"+err));
 })
 */
